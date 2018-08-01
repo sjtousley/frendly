@@ -1,0 +1,489 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700,900');
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+
+body {
+	font-size: 16px;
+	font-family: 'Lato', Sans-Serif;
+	color: #333333;
+}
+
+.wrapper {
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+a {
+	color: #2f7bbd;
+}
+
+a:hover {
+	color: #4CB8C4;
+}
+
+/*------------Nav-------------*/
+
+header {
+	box-shadow: 0 2px 5px rgba(0,0,0,.09);
+	position: relative;
+}
+
+header img {
+	max-width: 160px;
+	margin-top: 1em;
+}
+
+nav {
+	float: right;
+}
+
+nav ul {
+	font-size: 1em;
+	line-height: normal;
+	margin: 0;
+}
+
+nav li {
+	font-weight: 300;
+	display: inline-block;
+	font-size: 1.2em;
+	padding: 1.5em;
+}
+
+nav a {
+	text-decoration: none;
+	color: #ffffff;
+}
+
+nav a:hover {
+	color: #4CB8C4;
+}
+
+.nav-cta {
+	background: #FF396E;
+	border-radius: 130px;
+	color: #FFFFFF;
+	text-align: center;
+	text-decoration: none;
+	padding: 0.75em 1.5em;
+	font-size: 16px;
+	display: inline-block;
+}
+
+/*--------------Hero-----------------*/
+
+.hero-background {
+	background-image: linear-gradient(50deg, #755FC0 -10%, #0473CE 125%);
+}
+
+#hero {
+	padding-top: 6em;
+}
+
+#hero-image {
+	width: 40%;
+	float: left;
+}
+
+#hero-text {
+	width: 60%;
+	float: left;
+	color: #ffffff;
+}
+
+#hero-text h2 {
+	margin-top: 1.5em;
+	font-size: 3.5em;
+	font-weight: 900;
+}
+
+#hero p {
+	font-size: 1.25em;
+	font-weight: 100;
+	line-height: 1.75em;
+	margin: 1em 0 1.5em 0;
+	text-align: left;
+	max-width: 500px;
+}
+
+.hero-cta {
+	background: #FF396E;
+	border-radius: 130px;
+	color: #FFFFFF;
+	text-align: center;
+	text-decoration: none;
+	padding: 1em 2.5em;
+	font-size: 1.25em;
+	display: inline-block;
+}
+
+/*----------Explanation box----------*/
+
+#explanation-box {
+	margin: 5em auto;
+}
+
+#explanation-box h3 {
+	text-align: center;
+	font-size: 3em;
+	font-weight: 700;
+	margin: auto;
+	padding-bottom: 3%;
+}
+
+#explanation-box img {
+	display: block;
+	margin: 4em auto 1em;
+	max-width: 325px;
+}
+
+#explanation-box p {
+	font-size: 1.3em;
+	font-weight: 300;
+	text-align: center;
+	margin-bottom: 2em;
+}
+
+.explanation-cta {
+	background: #FF396E;
+	border-radius: 130px;
+	color: #FFFFFF;
+	text-align: center;
+	text-decoration: none;
+	padding: 1em 2.5em;
+	font-size: 1.25em;
+	display: block;
+	margin: auto;
+	margin-top: 1%;
+	max-width: 275px;
+}
+
+
+/*-----------Full wrapper CTA--------------*/
+
+#full-wrapper-cta {
+	background-color: #000000;
+	color: #ffffff;
+	font-size: 1.5em;
+	font-weight: 300;
+	line-height: 1.75em;
+	margin: 1em 0 1.5em 0;
+	text-align: center;
+	padding: 1em;
+}
+
+/*Mailchimp form styling for the final cta section*/
+
+	/* Changes the style of the overall form */
+	#full-wrapper-cta #mc_embed_signup {
+	    background: #f8f8f8;
+	    text-align: center;
+	}
+
+	/* Adds extra space around the input boxes */
+	#full-wrapper-cta #mc_embed_signup .mc-field-group {
+	    /*padding: 10px 0;*/
+	}
+
+	/* Styles the input boxes */
+	#full-wrapper-cta #mc_embed_signup  input {
+	    font-size: .8em;
+		font-family: 'Open Sans', Sans-Serif;
+		padding: 0.8em;
+	    background: #ffffff;
+	    color: #000000;
+	    width: 50%; 
+	    display: block;
+	    float: left;
+	    margin: 2% 0 2% 8%;
+	}
+
+	/* Styles the subscribe button */
+	#full-wrapper-cta #mc_embed_signup .button {
+	    background-color: #4CB8C4;
+	    color: #ffffff;
+	    border-radius: 0.3em;
+	    font-size: .8em;
+	    font-weight: 700;
+	    box-shadow: 2px 2px 10px #333333;
+	    max-width: 30%;
+	    margin-left: 2%;
+	}
+
+	/* Styles the subscribe button when hovered*/
+	#full-wrapper-cta #mc_embed_signup .button:hover {
+	    background-color: #51C4D1;
+	}
+
+/*----------------Footer---------------*/
+
+footer {
+	background-color: #F9FAFB;
+	text-align: center;
+	padding: 2em;
+	font-size: 0.85em;
+	color: #a2a2a2;
+	line-height: 2em;
+}
+
+/* ---------- Blog post featured image -------------*/
+
+.entry-header {
+	/*not in wordpress */background: linear-gradient(rgba(0,0,0,.35),rgba(0,0,0,.35)), url("../images/creative-burnout.jpg");
+	/*not in wordpress */padding: 9% 0 3% 0; 
+}
+
+.entry-header-text {
+	max-width: 50%;
+	margin: auto;
+	text-align: center;
+	color: #ffffff;
+}
+
+.entry-header-text h1, h2 {
+	font-size: 2.75em;
+	line-height: 1.7em;
+    font-weight: 400;
+}
+
+.entry-meta {
+	font-size: 0.7em;
+	margin-top: 5em;
+}
+
+.entry-header img {
+	/*not in wordpress */display: inline-block;
+	/*not in wordpress */max-width: 80px;
+	/*not in wordpress */border-radius: 40px;
+}
+
+/* ---------- Blog post main content -------------*/
+
+.article-wrapper {
+	max-width: 800px;
+	margin: 0 auto;
+}
+
+#article-content p, ul, ol {
+	font-size: 18px;
+	color: #333333;
+	line-height: 1.9em; 
+	margin: 40px 0;
+}
+
+#article-content p:first-child {
+	margin-top: 5em;
+}
+
+#article-content p:first-child:first-letter {
+  color: #4CB8C4;
+  float: left;
+  font-size: 4.5em;
+  line-height: 0.5em;
+  padding-top: 4px;
+  padding-right: 8px;
+  padding-left: 3px;
+}
+
+#article-content h2 {
+	font-size: 2em;
+	font-weight: 600;
+}
+
+#article-content h3 {
+	font-size: 1.6em;
+	font-weight: 600;
+}
+
+#article-content h4 {
+	font-size: 1.3em;
+	font-weight: 600;
+}
+
+#article-content blockquote p {
+	color: #4CB8C4;
+	font-size: 1.6667em;
+	font-weight: 300;
+	font-style: italic;
+	text-align: center;
+	line-height: 1.9em;
+}
+
+#article-content blockquote p:first-child {
+	margin-top: 0;
+}
+
+#article-content blockquote p:first-child:first-letter {
+  color: inherit;
+  float: none;
+  font-size: inherit;
+  line-height: inherit;
+  padding-top: inherit;
+  padding-right: inherit;
+  padding-left: inherit;
+}
+
+/*#article-content img {
+	width: 100%;
+}*/
+
+#article-content ul, ol {
+	font-size: 1em;
+	margin-left: 2em;
+}
+
+#disqus_thread {
+    max-width: 1200px;
+    margin: auto;
+    margin-top: 3em;
+}
+
+/*-------------------Blog Index page-----------------------*/
+
+.blog-index-header {
+    padding: 2em;
+    background: #4CB8C4;
+    text-align: center;
+    color: #ffffff;
+    line-height: 3em;
+    margin: 1em 0;
+}
+
+.entry-header-text a {
+    max-width: 50%;
+    margin: auto;
+    text-align: center;
+    color: #fff;
+    text-decoration: none;
+}
+
+.entry-header-text a:hover {
+    text-decoration:  underline;
+}
+
+/*-------------------Contact page-----------------------*/
+
+.nf-form-fields-required {
+    display: none;
+}
+
+.ninja-form-button {
+    background-color: #4CB8C4;
+    color: #ffffff;
+    border-radius: 0.3em;
+    font-size: 1.2em;
+    font-weight: 700;
+    box-shadow: 2px 2px 10px #333333;
+    padding: 0.7em 3em;
+}
+
+.ninja-form-button:hover {
+    background-color: #51C4D1;
+}
+
+.ninja-form-textbox {
+    font-size: 1em;
+    padding: 1em;
+}
+
+/*-------------------Responsive design code-----------------------*/
+
+@media only screen and (max-width: 1240px) {
+	.wrapper {
+	margin: 0% 2%;
+	}
+}
+
+@media only screen and (max-width: 1072px) {
+	body {
+		font-size: 14px;
+	}
+}
+
+@media only screen and (max-width: 938px) {
+	#hero-text h2 {
+		font-size: 2.8em;
+	}
+	#testimonial-header h3 {
+		font-size: 1.5em;
+	}
+}
+
+@media only screen and (max-width: 768px) {
+	body {
+		font-size: 14px;
+	}
+
+	header img {
+		display: block;
+		max-width: 40%;
+		padding: 1em;
+		margin: auto;
+	}
+
+	nav {
+		display: none;
+	}
+
+	/*homepage*/
+
+
+	#hero-text {
+	width: 100%;
+	float: none;
+	text-align: center;
+	}
+
+	#hero-text p {
+		text-align: center;
+	}
+
+	#hero-image {
+		display: none;
+	}
+
+	#hero-text h2 {
+		font-size: 3em;
+		text-align: center;
+		margin: 0;
+	}
+
+	.hero-cta {
+		margin-bottom: 2em;
+	}
+
+	#explanation-box h3 {
+		padding-bottom: 1em;
+	}
+
+	/*blog posts*/
+
+	.entry-header-text {
+		max-width: 100%;
+	}
+
+	.entry-header-text h1 {
+		font-size: 2.25em;
+	}
+
+	#article-content {
+		margin: 5%;
+	}
+
+	#article-content p {
+		font-size: 16px;
+	}
+}
