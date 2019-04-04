@@ -1,116 +1,224 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<!-- Start Google Analytics Tag -->
-	<!-- Global site tag (gtag.js) - Google Analytics -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-123485847-1"></script>
-	<script>
-  		window.dataLayer = window.dataLayer || [];
-  		function gtag(){dataLayer.push(arguments);}
-  		gtag('js', new Date());
+    
+  <!-- Start Google Analytics Tag -->
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-123485847-1"></script>
+  <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
 
-  		gtag('config', 'UA-123485847-1');
-	</script>
-	<!-- End Google Analytics Tag -->
-	<!-- begin stuff that makes carousel slider work -->
-	  <meta charset="utf-8">
-	  <meta name="viewport" content="width=device-width, initial-scale=1">
-	  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-	  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-	<!-- end stuff that makes carousel slider work -->
-	<title>Frendly: Where Remote Workers Find Coworkers</title>
-	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<meta name="viewport" content="width=device-width, initialscale=1">
+      gtag('config', 'UA-123485847-1');
+  </script>
+  <!-- End Google Analytics Tag -->
+
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+  
+  <!-- Frendly CSS -->
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <title>Frendly: Where Remote Workers Find Coworkers</title>
+
 </head>
-<body>		
-	
-	<div class="hero-background">
-	
-		<header class="clearfix">
-			<div class="wrapper">
-				<a href="http://frendly.co"><img src="images/frendly-logo.png" alt="frendly-logo"></a>
-				<nav class="clearfix">
-					<ul>
-						<li><a href="#">Log In</a></li>
-						<li><a class="nav-cta" href="#typeform-survey">Join Free</a></li>
-					</ul>
-				</nav>	
-			</div>
-		</header>
+<body>
 
-		<section id="hero" class="clearfix wrapper">
-			<div id="hero-text">
-				<h2>Where Remote Workers Find Coworkers</h2>
-				<p>Meet remote workers in your city without paying for an expensive coworking space. &nbsp; 🏢💸🙅‍♀️</p>
-				<!-- <a href="#typeform-survey" class="hero-cta">Join Free</a> -->	
-				<a href="https://www.linkedin.com/oauth/v2/authorization?response_type=code&client_id=86s46lz0kj9h7n&redirect_uri=http://frendly.co/profile&state=987654321&scope=r_basicprofile"><img src="images/sign-in-with-google.png"></a>	
-			</div>
-			<img src="images/frendly-hero-mockup.png" id="hero-image">
-		</section>
+  <!-- Nav -->
 
-	</div>
+  <div class="homepage-background">
 
-	<section id="explanation-box" class="clearfix">
-		<h3>How Does It Work?</h3>
-		
-		<!-- <img src="images/frendly-hero-mockup.png"> -->
-		
-		<!-- Start Carousel from Bootstrap https://www.w3schools.com/bootstrap/bootstrap_carousel.asp	 -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+      <a class="navbar-brand" href="#"><img src="images/frendly-logo.png" width="150" alt=""></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="nav nav-pills justify-content-end container">
+          <li class="nav-item">
+            <a class="nav-link text-white" data-toggle="modal" data-target="#exampleModalCenter">Login</a>
+          </li>
+          <li class="nav-item">
+  
+              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
+                Join Free
+              </button>
 
-		<div class="container">
-		  <div id="myCarousel" class="carousel slide" style="width:100%; margin:auto; background-color:white;">
-		    
-		    <!-- Wrapper for slides -->
-		    <div class="carousel-inner">
-		      <div class="item active">
-		        <img src="images/3x-iphone-mock-check-in-page.jpg" alt="frendly-check-in-page" style="width:80%; margin:auto;">
-		      </div>
-
-		      <div class="item">
-		        <img src="images/3x-iphone-mock-list-view.jpg" alt="frendly-website-list-view" style="width:80%; margin:auto;">
-		      </div>
-
-		      <div class="item">
-		        <img src="images/3x-iphone-mock-map-profile.jpg" alt="frendly-map-view" style="width:80%; margin:auto;">
-		      </div>
-		    
-		      <div class="item">
-		        <img src="images/website-mockup-3-message-view.jpg" alt="frendly-messages-view" style="width:80%; margin:auto;">
-		      </div>
-
-		      <div class="item">
-		        <img src="images/3x-iphone-mock-event-list.jpg" alt="frendly-messages-view" style="width:80%; margin:auto;">
-		      </div>
-		    </div>
-
-		    <!-- Left and right controls -->
-		    <a class="left carousel-control" style="background-image:none;" href="#myCarousel" data-slide="prev">
-		      <span class="glyphicon glyphicon-chevron-left" style="color:#5365C4; padding-left:120%;"></span>
-		      <span class="sr-only">Previous</span>
-		    </a>
-		    <a class="right carousel-control" style="background-image:none;" href="#myCarousel" data-slide="next">
-		      <span class="glyphicon glyphicon-chevron-right" style="color:#5365C4; padding-right:120%;"></span>
-		      <span class="sr-only">Next</span>
-		    </a>
-		  </div>
-		</div>
-
-		<!-- End Carousel from Bootstrap https://www.w3schools.com/bootstrap/bootstrap_carousel.asp	 -->
-
-		<a href="#typeform-survey" class="explanation-cta">Join Free</a>
-	</section>
-
-	<section id="typeform-survey" class="clearfix">
-			<div class="typeform-widget" data-url="https://altrepreneur.typeform.com/to/F9Yuk2" style="width: 100%; height: 700px;"></div> <script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm", b="https://embed.typeform.com/"; if(!gi.call(d,id)) { js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script> <div style="font-family: Sans-Serif;font-size: 12px;color: #999;opacity: 0.5; padding-top: 5px;"> powered by <a href="https://admin.typeform.com/signup?utm_campaign=F9Yuk2&utm_source=typeform.com-1307709-Basic&utm_medium=typeform&utm_content=typeform-embedded-poweredbytypeform&utm_term=EN" style="color: #999" target="_blank">Typeform</a> </div>
-		</div>
-	</section>
+              <!-- Modal -->
+              <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title" id="exampleModalCenterTitle">Create a free account</h4>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body text-center">
+                      <div class="row">
+                        <div class="col">
+                          <p>To create a new account, or log in, please sign in with LinkedIn.</p>
+                          <a href="https://www.linkedin.com/oauth/v2/authorization?response_type=code&client_id=86s46lz0kj9h7n&redirect_uri=http://frendly.co/profile&state=987654321&scope=r_basicprofile"><button class="col btn sign-in-btn" style="background-color:#0177b5;"><img src="images/linked-in-logo.png" style="max-width: 25px; margin-right: 8px; margin-bottom: 5px;">Sign in with LinkedIn</button></a>
+                          <p style="font-size: 0.8em;">We use LinkedIn to authorize your account and for no other purpose. Your contacts are not imported or messaged.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </li>
+          
+              
 
 
-	<footer class="clearfix">
-		<p>Frendly 2018</p>
-		<p>Built with ☀️ in San Diego, CA</p>
-	</footer>
+          
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Header -->
+
+  <header>
+    <div class="container text-white">      
+    <div class="row homepage-hero">
+      <div class="col-sm-12 col-md-7">
+        <h1 class="mt-4">Where remote workers find coworkers</h1>
+        <p>Meet remote workers in your city without paying for an expensive coworking space &nbsp; 🏢💸🙅‍♀️</p>    
+        <button type="button" class="btn btn-homepage btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
+        Join Free
+        </button>
+      </div>
+      <div class="col-5">
+        <img src="images/3x-iPhone mock - Map + Messages.png" width="100%" align="right">
+      </div>
+    </div>
+    </div>
+  </header>
+
+  </div>
+
+  <!-- Explainer modal: Attempt with Javascript that actually worked https://www.w3schools.com/js/tryit.asp?filename=tryjs_intro_lightbulb --> 
+
+  <div class="container">
+    <div class="header-text-box">
+      <h2 class="text-center">Why feel alone when you're surrounded <br>by people just like you?</h2>
+      <h5 class="text-center mt-4">You have hundreds of remote workers all around you. <br>Meeting them is easy as 1-2-3. 👋</h5>
+    </div>
+    <div class="row">
+      <div class="col-sm-12 col-md-7">
+        <button class="btn btn-outline-secondary explainer-modal" onclick="document.getElementById('explainer-modal-image').src='images/march2019-3x-iPhone mock - Map + Profile Copy.jpg'">
+          <h3>1. Find remote workers</h3>
+          <p>Discover how many remote workers are all around you</p>
+        </button>
+        <button class="btn btn-outline-secondary explainer-modal" onclick="document.getElementById('explainer-modal-image').src='images/march2019-3x-iPhone mock - Chat Thread Copy.jpg'">
+          <h3>2. Work together</h1>
+          <p>Meet at cafes or each other's homes. It's like Airbnb for coworking ... but free</p>
+        </button>
+        <button class="btn btn-outline-secondary explainer-modal" onclick="document.getElementById('explainer-modal-image').src='images/march2019-3x-iPhone mock - Event list Copy.jpg'">
+          <h3>3. Attend fun events</h1>
+          <p>Happy hours, escape rooms, and more designed exclusively for Frendly members</p>
+        </button>
+      </div>
+      <div class="col-sm-12 col-md-5">
+        <img id="explainer-modal-image" src="images/march2019-3x-iPhone mock - Map + Profile Copy.jpg" style="width:75%">
+      </div>
+    </div>  
+  </div>  
+
+  <button type="button" class="btn btn-homepage btn-primary mx-auto" data-toggle="modal" data-target="#exampleModalCenter">
+        Join Free
+  </button>
+
+
+
+  <!-- Testimonial section -->
+
+  <div class="homepage-background">
+    <div class="container">
+      
+      <div class="header-text-box">
+        <h2 class="text-center text-white">All of the benefits, none of the costs</h2>
+        <h5 class="text-center text-white">Join thousands of remote workers who love Frendly</h5>
+      </div>
+
+      <div>
+        <p id="Testimonial" class="text-center text-white testimonial-quote"><i>Paying $400/month for a coworking space made sense in 2018 ... until I discovered Frendly</i></p>
+      </div>
+
+      <div class="container testimonial-boxes">
+      <div class="row">
+       
+        <div class="col-4">
+          <button class="btn btn-outline-secondary" onclick="document.getElementById('Testimonial').innerHTML='<i>Paying $400/month for a coworking space made sense in 2018 ... until I discovered Frendly</i>'">
+            <img src="images/evan-shoemaker-headshot.jpg" alt="Evan Shoemaker" class="img-thumbnail">
+            <p>Chad Prigmore</p>
+            <p>Sales @ InVision</p>
+            <p>Providence, RI</p>
+          </button>
+        </div>
+
+        <div class="col-4">
+          <button class="btn btn-outline-secondary" onclick="document.getElementById('Testimonial').innerHTML='<i>When I began working remote I felt and isolated in my house. Now I have friends everywhere.</i>'">
+            <img src="images/evan-shoemaker-headshot.jpg" alt="Evan Shoemaker" class="img-thumbnail">
+            <p>Evan Shoemaker</p>
+            <p>Founder @ WeBuild</p>
+            <p>San Diego, CA</p>
+          </button>
+        </div>
+
+        <div class="col-4">
+          <button class="btn btn-outline-secondary" onclick="document.getElementById('Testimonial').innerHTML='<i>The events are so fun and unique! They are the best part of the Frendly community.</i>'">
+            <img src="images/evan-shoemaker-headshot.jpg" alt="Evan Shoemaker" class="img-thumbnail">
+            <p>David Kelly</p>
+            <p>Marketing @ HubSpot</p>
+            <p>Austin, TX</p>
+          </button>
+        </div>
+      
+      </div>
+      </div>
+    </div>  
+  </div>
+
+  <!-- Closing setion section -->
+
+  <div class="container">
+
+    <h2 class="text-center header-text-box">Why we started Frendly</h2>
+
+    <p>We are a team of former remote workers, entrepreneurs, and consultants who have all felt the pain loneliness working remote.</p>
+    <p>Yes, coworking spaces existed, but as entrepreneurs with little cash to spare, we couldn't stomach the $400 per month bill.</p>
+    <p>We decided to start Frendly as a <b><u>free</u></b> community to see if other remote workers want the social interaction without the expensive monthly coworking space bill.</p>
+    <p>Hopefully, we will grow a large enough network to turn this into a viable business (membership will always be free!) with the goal of bringing us all together.</p>
+    <p>Create a free account and we're happy to answer any questions you might have or accept any ideas.</p>
+
+    <button type="button" class="btn btn-homepage btn-primary mx-auto" data-toggle="modal" data-target="#exampleModalCenter">
+        Join Free
+    </button>
+
+  </div>
+
+  <footer>
+    <div class="container">
+      <div class="text-center">
+        <a href="https://app.termly.io/document/privacy-policy/be300779-0b53-4a0f-9533-4bdbb2790d52">Privacy Policy</a>
+        <a href="#">Contact</a>
+        <a href="#">We Are Hiring</a>
+      </div>
+    </div>
+  </footer>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
 
 </body>
 </html>
