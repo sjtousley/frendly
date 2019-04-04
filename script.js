@@ -31,7 +31,7 @@ $(document).ready(() => {
   const getUserProfile = accessToken => {
     fetch(`${serviceApi}/me`, {
       method: "POST",
-      mode: 'cors',
+      mode: "cors",
       headers: {
         "Content-Type": "application/json"
       },
@@ -40,7 +40,7 @@ $(document).ready(() => {
       .then(async response => {
         //get html element then edit
         const result = await response.json();
-        console.log(result, '--from backend');
+        console.log(result, "--from backend");
         if (result) {
           checkIfExistingUser(result);
         }
@@ -49,30 +49,32 @@ $(document).ready(() => {
   };
 
   if (getQuery.code && !accessToken) {
-    $.ajax({
-      url: `https://www.linkedin.com/oauth/v2/accessToken?grant_type=authorization_code&code=${
-        getQuery.code
-      }&redirect_uri=${window.location.origin}${
-        window.location.pathname
-      }&client_id=86m7vxpm3x94qi&client_secret=zgxGSGtlnXJuT9uU`,
+    fetch(`${serviceApi}/getToken`, {
       method: "POST",
-      contentType: "application/x-www-form-urlencoded",
-      success: res => {
-        //save token to localstorage
-        //to check if authenticated
-        console.log(res);
-        window.localStorage.setItem("identity", res.access_token);
-        getUserProfile(res.access_token);
+      mode: "cors",
+      headers: {
+        "Content-Type": "application/json"
       },
-      error: err => {
-        console.log(err);
-      }
-    });
+      body: JSON.stringify({
+        code: getQuery.code,
+        origin: window.location.origin,
+        pathname: window.location.pathname
+      })
+    })
+      .then(async response => {
+        //get html element then edit
+        const result = await response.json();
+        console.log(result, "--from token backend");
+        if (result) {
+          window.localStorage.setItem("identity", result.access_token);
+          getUserProfile(result.access_token);
+        }
+      })
+      .catch(e => console.error(e));
   } else {
     getUserProfile(accessToken);
   }
 });
-//make request to linkedin api
 
 //save data to database
 const saveNewUser = data => {
@@ -103,11 +105,11 @@ const checkIfExistingUser = user => {
           console.log("Document found with ID: ");
           const user = doc.data();
 
-          $('.firstName').text(user.firstName)
-          $('.lastName').text(user.lastName)
-          $('.city').text(user.city)
-          $('.title').text(user.role)
-          $('.company').text(user.company)
+          $(".firstName").text(user.firstName);
+          $(".lastName").text(user.lastName);
+          $(".city").text(user.city);
+          $(".title").text(user.role);
+          $(".company").text(user.company);
         } else {
           const payload = {
             firstName: user.firstName.localized.en_US,
