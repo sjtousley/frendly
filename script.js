@@ -6,7 +6,7 @@ var config = {
 };
 firebase.initializeApp(config);
 var db = firebase.firestore();
-const serviceApi = "http://localhost:3000";
+const serviceApi = "https://frendly.herokuapp.com";
 
 function getUrlVars() {
   var vars = [],
