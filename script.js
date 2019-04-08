@@ -104,12 +104,17 @@ const checkIfExistingUser = user => {
         if (doc.data()) {
           console.log("Document found with ID: ");
           const user = doc.data();
+          const firstName = user.firstName || 'friend';
+          const lastName = user.lastName || 'lastname';
+          const city = user.city || 'city';
+          const title = user.role || 'role';
+          const company = user.company || 'company';
 
-          $(".firstName").text(user.firstName);
-          $(".lastName").text(user.lastName);
-          $(".city").text(user.city);
-          $(".title").text(user.role);
-          $(".company").text(user.company);
+          $(".firstName").text(firstName);
+          $(".lastName").text(lastName);
+          $(".city").text(city);
+          $(".title").text(title);
+          $(".company").text(company);
           $("#profileImage").attr('src', user.profilePicture);
         } else {
           const payload = {
