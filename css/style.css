@@ -35,10 +35,15 @@ h2 {
   font-weight: 700;
 }
 
+*:focus { 
+  outline: none !important;
+}
 
-.btn {
+
+.btn, .btn:hover, .btn:focus {
   border-radius: 1em;
-  border: none;
+  outline: none !important;
+  border: none !important;
 }
 
 .btn-primary {
@@ -58,10 +63,14 @@ h2 {
   border: none;
 }
 
-.btn-outline-secondary:hover {
+.btn-outline-secondary:hover,
+.btn-outline-secondary:focus {
   background-color: #ffffff;
   color: #6062C2;
+  border: none;
+  border-color: transparent;
 }
+
 
 header {
   margin-bottom: 3%;
