@@ -109,13 +109,14 @@ const checkIfExistingUser = user => {
           const city = user.city || 'city';
           const title = user.role || 'role';
           const company = user.company || 'company';
+          const userAvatar = user.profilePicture || 'https://en.wikipedia.org/wiki/File:Stick_Figure.svg';
 
           $(".firstName").text(firstName);
           $(".lastName").text(lastName);
           $(".city").text(city);
           $(".title").text(title);
           $(".company").text(company);
-          $("#profileImage").attr('src', user.profilePicture);
+          $("#profileImage").attr('src', userAvatar);
         } else {
           const payload = {
             firstName: user.firstName.localized.en_US,
