@@ -110,6 +110,7 @@ const checkIfExistingUser = user => {
           $(".city").text(user.city);
           $(".title").text(user.role);
           $(".company").text(user.company);
+          $("#profileImage").attr('src', user.profilePicture);
         } else {
           const payload = {
             firstName: user.firstName.localized.en_US,
