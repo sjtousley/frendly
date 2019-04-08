@@ -109,7 +109,7 @@ const checkIfExistingUser = user => {
           const city = user.city || 'city';
           const title = user.role || 'role';
           const company = user.company || 'company';
-          const userAvatar = user.profilePicture || 'https://en.wikipedia.org/wiki/File:Stick_Figure.svg';
+          const userAvatar = user.profilePicture || '/images/evan-shoemaker-headshot.jpg';
 
           $(".firstName").text(firstName);
           $(".lastName").text(lastName);
