@@ -1,76 +1,136 @@
 <!DOCTYPE html>
 <html>
-<head>
-    
-  <!-- Start Google Analytics Tag -->
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-123485847-1"></script>
-  <script>
+  <head>
+    <!-- Start Google Analytics Tag -->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-123485847-1"
+    ></script>
+    <script>
       window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-      gtag('config', 'UA-123485847-1');
-  </script>
-  <!-- End Google Analytics Tag -->
+      gtag("config", "UA-123485847-1");
+    </script>
+    <!-- End Google Analytics Tag -->
 
-  <!-- Required meta tags -->
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  
-  <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
-  
-  <!-- Frendly CSS -->
-  <link rel="stylesheet" type="text/css" href="css/style.css">
-  <title>Frendly: Where Remote Workers Find Coworkers</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
 
-</head>
-<body>
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+      integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+      crossorigin="anonymous"
+    />
 
+    <!-- Frendly CSS -->
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <title>Frendly: Where Remote Workers Find Coworkers</title>
+  </head>
+  <body>
+    <!-- Nav -->
 
-  <!-- Nav -->
-
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <div class="container">
-      <a class="navbar-brand" href="https://www.frendly.co"><img src="images/frendly-logo.png" width="150" alt=""></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container">
+        <a class="navbar-brand" href="https://www.frendly.co"
+          ><img src="images/frendly-logo.png" width="150" alt=""
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
         </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="nav nav-pills justify-content-end container">
-          <li class="nav-item">
-            <!-- <a class="nav-link" href="http://www.google.com">Profile</a> -->
-          </li>
-          <li class="nav-item">
-            <!-- <a class="nav-link active" href="http://www.google.com">Get Credits</a> -->
-            <!-- Button trigger modal -->
-  
-              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#getcredits">
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="nav nav-pills justify-content-end container">
+            <li class="nav-item">
+              <!-- <a class="nav-link" href="http://www.google.com">Profile</a> -->
+            </li>
+            <li class="nav-item">
+              <!-- <a class="nav-link active" href="http://www.google.com">Get Credits</a> -->
+              <!-- Button trigger modal -->
+
+              <button
+                type="button"
+                class="btn btn-primary"
+                data-toggle="modal"
+                data-target="#getcredits"
+              >
                 Get Credits
               </button>
 
               <!-- Modal -->
-              <div class="modal fade" id="getcredits" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+              <div
+                class="modal fade"
+                id="getcredits"
+                tabindex="-1"
+                role="dialog"
+                aria-labelledby="exampleModalCenterTitle"
+                aria-hidden="true"
+              >
                 <div class="modal-dialog modal-dialog-centered" role="document">
                   <div class="modal-content">
                     <div class="modal-header">
-                        <h4 class="modal-title" id="exampleModalCenterTitle">Dolla dolla bill, y'all 💰</h4>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                          <span aria-hidden="true">&times;</span>
-                        </button>
+                      <h4 class="modal-title" id="exampleModalCenterTitle">
+                        Dolla dolla bill, y'all 💰
+                      </h4>
+                      <button
+                        type="button"
+                        class="close"
+                        data-dismiss="modal"
+                        aria-label="Close"
+                      >
+                        <span aria-hidden="true">&times;</span>
+                      </button>
                     </div>
                     <div class="modal-body text-center">
                       <div class="row">
                         <div class="col">
-                          <p>Earn $10 in future credit for every person you invite to Frendly.</p>
-                          <p><a href="#" class="share-url">www.frendly.co/987lijf7</a></p>
+                          <p>
+                            Earn $10 in future credit for every person you
+                            invite to Frendly.
+                          </p>
+                          <p>
+                            <a href="#" class="share-url"
+                              >www.frendly.co/987lijf7</a
+                            >
+                          </p>
                         </div>
                       </div>
                       <div class="row" style="display: block;">
-                        <button class="col btn share-btn" style="background-color:#0177b5;">Share on LinkedIn</button>
-                        <button class="col btn share-btn" style="background-color:#4268b2;">Share on Facebook</button>
-                        <button class="col btn share-btn" style="background-color:#48a9e6;">Share on Twitter</button>
+                        <button
+                          class="col btn share-btn"
+                          style="background-color:#0177b5;"
+                        >
+                          Share on LinkedIn
+                        </button>
+                        <button
+                          class="col btn share-btn"
+                          style="background-color:#4268b2;"
+                        >
+                          Share on Facebook
+                        </button>
+                        <button
+                          class="col btn share-btn"
+                          style="background-color:#48a9e6;"
+                        >
+                          Share on Twitter
+                        </button>
                       </div>
                     </div>
                     <!-- <div class="modal-footer">
@@ -80,77 +140,183 @@
                   </div>
                 </div>
               </div>
-          </li>
-          
-        </ul>
+            </li>
+          </ul>
+        </div>
       </div>
-    </div>
-  </nav>
+    </nav>
 
-  <!-- Page Header -->
-
-  <div class="container text-center header-text-box">
-    
-    <h1>Hi, <span class="firstName">friend</span> 👋</h1>
-    <p>We've added info from LinkedIn, such as your beautiful picture ... </p>
-    <div>
-      <img id="profileImage" alt="profile picture" class="img-thumbnail">
-    </div>
-    <p><i>Did we mention how attractive you are?</i></p>
-    <p>... But you're still missing some info. Please answer these questions so our robots stop yelling at us.</p>
-
-    
-
-
-    <div style="max-width: 600px; margin: auto;">
+    <!-- Page Header -->
+    <div id="loading"><h3>Loading....</h3></div>
+    <div
+      class="container text-center header-text-box"
+      id="onboarding-container"
+      style="display: none;"
+    >
+      <h1>Hi, <span class="firstName">friend</span> 👋</h1>
+      <p>We've added info from LinkedIn, such as your beautiful picture ...</p>
       <div>
-        <!--[if lte IE 8]>
-        <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2-legacy.js"></script>
-        <![endif]-->
-        <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
-        <script>
-          hbspt.forms.create({
-          portalId: "2574922",
-          formId: "80078257-13d8-4fa2-82d0-8bb95090a081"
-          });
-        </script>
+        <img id="profileImage" alt="profile picture" class="img-thumbnail" />
       </div>
-    </div>
+      <p><i>Did we mention how attractive you are?</i></p>
+      <p>
+        ... But you're still missing some info. Please answer these questions so
+        our robots stop yelling at us.
+      </p>
 
-    <!-- <h2>Clearbit form</h2>
+      <div style="max-width: 600px; margin: auto;">
+        <div>
+          <!--[if lte IE 8]>
+            <script
+              charset="utf-8"
+              type="text/javascript"
+              src="//js.hsforms.net/forms/v2-legacy.js"
+            ></script>
+          <![endif]-->
+          <script
+            charset="utf-8"
+            type="text/javascript"
+            src="//js.hsforms.net/forms/v2.js"
+          ></script>
+          <script>
+            hbspt.forms.create({
+              portalId: "2574922",
+              formId: "80078257-13d8-4fa2-82d0-8bb95090a081",
+              onFormReady: $form => {
+                const form = $($form);
+                const formFirstname = form.find('input[name="firstname"]');
+                const formLastname = form.find('input[name="lastname"]');
+                const formEmail = form.find('input[name="email"]');
+                $.fn.notifyHubspot = function() {
+                  function doEvent(obj, name) {
+                    try {
+                      var event = new Event(name, {
+                        target: obj,
+                        bubbles: true
+                      });
+                      return obj ? obj.dispatchEvent(event) : false;
+                    } catch (e) {
+                      var event = document.createEvent("Event");
+                      event.initEvent(name, true, true);
+                      obj.dispatchEvent(event);
+                    }
+                  }
+
+                  $(this).each(function() {
+                    doEvent(this, "change");
+                    doEvent(this, "input");
+                    doEvent(this, "blur");
+                  });
+
+                  return $(this);
+                };
+
+                setTimeout(() => {
+                  const loggedInUser = window.loggedUser;
+                  formFirstname.val(loggedInUser.firstname).notifyHubspot();
+                  formLastname.val(loggedInUser.lastname).notifyHubspot();
+                  formEmail.val(loggedInUser.email).notifyHubspot();
+                }, 2000);
+              },
+              onFormSubmit: $form => {
+                const form = $($form);
+                const formFirstname = form
+                  .find('input[name="firstname"]')
+                  .val();
+                const formLastname = form.find('input[name="lastname"]').val();
+                const formEmail = form.find('input[name="email"]').val();
+                const formJobTitle = form.find('input[name="jobtitle"]').val();
+                const formCompany = form.find('input[name="company"]').val();
+                const formCity = form.find('input[name="city"]').val();
+                const formNeighborhood = form
+                  .find('input[name="neighborhood"]')
+                  .val();
+                const howLongFromHome = form
+                  .find(
+                    'input[name="how_often_do_you_work_from_home_"]:checked'
+                  )
+                  .val();
+                const howLongFromWorkingSpace = form
+                  .find(
+                    'input[name="how_often_do_you_work_from_a_coworking_space_"]:checked'
+                  )
+                  .val();
+                const howLongFromCoffee = form
+                  .find(
+                    'input[name="how_often_do_you_work_from_a_coffee_shop_"]:checked'
+                  )
+                  .val();
+                //save to db
+                console.log(window.loggedUser);
+                window.updateUser({
+                  role: formJobTitle,
+                  company: formCompany,
+                  city: formCity,
+                  neighborhood: formNeighborhood,
+                  howOftenUserWorksFromHome: howLongFromHome,
+                  howOftenUserUsesWorkSpace: howLongFromWorkingSpace,
+                  howOftenAtCoffeeShop: howLongFromCoffee,
+                  id: window.loggedUser.id
+                });
+              },
+              redirectUrl: "/profile.html"
+            });
+          </script>
+        </div>
+      </div>
+
+      <!-- <h2>Clearbit form</h2>
 
     <script type="text/javascript" src="https://clearbitjs.com/v1/x/forms.js"></script>
     <div class="clearbit-form" data-form-id="58a4752e-2067-4522-933f-658f7c8e3d40" data-theme="default" ></div> -->
-  
-  </div> 
-
-  <!-- Footer -->
-
-  <footer>
-    <div class="container">
-      <div class="text-center">
-        <a href="https://app.termly.io/document/privacy-policy/be300779-0b53-4a0f-9533-4bdbb2790d52">Privacy Policy</a>
-        <a href="mailto:scott@frendly.co">Contact</a>
-        <a href="mailto:scott@frendly.co">We Are Hiring</a>
-      </div>
     </div>
-  </footer>
 
-  <!-- Optional JavaScript -->
-  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+    <!-- Footer -->
 
-  <!-- Codementor scripts -->
-  <script src="https://www.gstatic.com/firebasejs/5.8.4/firebase-app.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/5.8.4/firebase-firestore.js"></script>
+    <footer>
+      <div class="container">
+        <div class="text-center">
+          <a
+            href="https://app.termly.io/document/privacy-policy/be300779-0b53-4a0f-9533-4bdbb2790d52"
+            >Privacy Policy</a
+          >
+          <a href="mailto:scott@frendly.co">Contact</a>
+          <a href="mailto:scott@frendly.co">We Are Hiring</a>
+        </div>
+      </div>
+    </footer>
 
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.4.0.min.js"
+      integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+      integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+      integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+      crossorigin="anonymous"
+    ></script>
 
-  <!-- Start of HubSpot Embed Code -->
-  <script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/2574922.js"></script>
-  <!-- End of HubSpot Embed Code -->
-  
+    <!-- Codementor scripts -->
+    <script src="https://www.gstatic.com/firebasejs/5.8.4/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.8.4/firebase-firestore.js"></script>
 
-</body>
+    <!-- Start of HubSpot Embed Code -->
+    <script
+      type="text/javascript"
+      id="hs-script-loader"
+      async
+      defer
+      src="//js.hs-scripts.com/2574922.js"
+    ></script>
+    <!-- End of HubSpot Embed Code -->
+    <script src="js/onboarding.js"></script>
+  </body>
 </html>

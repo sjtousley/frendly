@@ -7,7 +7,6 @@ var config = {
 firebase.initializeApp(config);
 var db = firebase.firestore();
 const serviceApi = "https://frendly.herokuapp.com";
-
 function getUrlVars() {
   var vars = [],
     hash;
@@ -92,7 +91,7 @@ const saveNewUser = data => {
     });
 };
 
-window.updateUser = (data) => {
+window.updateUser = data => {
   db.collection("users")
     .doc(data.id)
     .update(data)
@@ -102,13 +101,14 @@ window.updateUser = (data) => {
     .catch(function(error) {
       console.error("Error updating document: ", error);
     });
-}
+};
 
 const checkIfExistingUser = user => {
   try {
     db.collection("users")
       .doc(user.id)
-      .onSnapshot(doc => {
+      .get()
+      .then(doc => {
         if (doc.data()) {
           console.log("Document found with ID: ");
           const user = doc.data();
@@ -118,14 +118,9 @@ const checkIfExistingUser = user => {
           const title = user.role || 'role';
           const company = user.company || 'company';
           const userAvatar = user.profilePicture || '/images/avatar-blank.jpeg';
-
-          $(".firstName").text(firstName);
-          $(".lastName").text(lastName);
-          $(".city").text(city);
-          $(".title").text(title);
-          $(".company").text(company);
-          $("#profileImage").attr('src', userAvatar);
-          window.loadAllUserCity({city, userId: user.id});
+          $("#profileImage").attr('src', user.profilePicture["displayImage~"].elements[2]["identifiers"][0][
+      "identifier"
+    ]);
           window.loggedUser = {
             firstname: firstName,
             lastname: lastName,
@@ -133,6 +128,8 @@ const checkIfExistingUser = user => {
             id: user.id,
             city
           }
+          window.location.href = '/profile.html';
+          //rdr to profile
         } else {
           const payload = {
             firstName: user.firstName.localized.en_US,
@@ -150,12 +147,12 @@ const checkIfExistingUser = user => {
             email: payload.email,
             id: payload.id
           }
-          // saveNewUser(payload);
+          saveNewUser(payload);
+          $('#onboarding-container').css('display', 'block');
+          $('#loading').css('display', 'none');
         }
       });
   } catch (error) {
     console.log(error);
   }
 };
-
-//check if on 
