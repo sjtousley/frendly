@@ -153,7 +153,7 @@
       id="onboarding-container"
       style="display: none;"
     >
-      <h1>Hi, <span class="firstName">friend</span> 👋</h1>
+      <h1>Hi, <span class="firstName" id="titleFirstname">friend</span> 👋</h1>
       <p>We've added info from LinkedIn, such as your beautiful picture ...</p>
       <div>
         <img id="profileImage" alt="profile picture" class="img-thumbnail" />
@@ -212,7 +212,11 @@
                 };
 
                 setTimeout(() => {
-                  const loggedInUser = window.loggedUser;
+                  const loggedInUser = window.loggedUser || {
+                    firstname: '',
+                    lastname: '',
+                    email: ''
+                  };
                   formFirstname.val(loggedInUser.firstname).notifyHubspot();
                   formLastname.val(loggedInUser.lastname).notifyHubspot();
                   formEmail.val(loggedInUser.email).notifyHubspot();

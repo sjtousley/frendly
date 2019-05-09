@@ -118,9 +118,7 @@ const checkIfExistingUser = user => {
           const title = user.role || 'role';
           const company = user.company || 'company';
           const userAvatar = user.profilePicture || '/images/avatar-blank.jpeg';
-          $("#profileImage").attr('src', user.profilePicture["displayImage~"].elements[2]["identifiers"][0][
-      "identifier"
-    ]);
+          $("#profileImage").attr('src', user.profilePicture);
           window.loggedUser = {
             firstname: firstName,
             lastname: lastName,
@@ -149,6 +147,8 @@ const checkIfExistingUser = user => {
           }
           saveNewUser(payload);
           $('#onboarding-container').css('display', 'block');
+          $('#titleFirstname').text(user.firstName.localized.en_US);
+          $("#profileImage").attr('src', user.profilePicture);
           $('#loading').css('display', 'none');
         }
       });
